@@ -227,7 +227,7 @@
             opacity: 0,
             duration: 1,
 
-             scrollTrigger: {
+            scrollTrigger: {
                 start: "top 70%",
                 toggleActions: "restart none restart none"
             }
@@ -238,7 +238,7 @@
             y: 80,
             opacity: 0,
             duration: 1,
-             scrollTrigger: {
+            scrollTrigger: {
                 start: "top 70%",
                 toggleActions: "restart none restart none"
             }
@@ -261,7 +261,7 @@
             opacity: 0,
             delay: 0.6,
             duration: 1,
-             scrollTrigger: {
+            scrollTrigger: {
                 start: "top 70%",
                 toggleActions: "restart none restart none"
             }
@@ -273,23 +273,23 @@
             opacity: 0,
             delay: 0.9,
             duration: 1,
-             scrollTrigger: {
+            scrollTrigger: {
                 start: "top 70%",
                 toggleActions: "restart none restart none"
             }
         });
         //Movie Section
-       gsap.from(".movie-box", {
-    x : 80,
-    opacity: 0,
-    duration: 1,
+        gsap.from(".movie-box", {
+            x: 80,
+            opacity: 0,
+            duration: 1,
 
-    scrollTrigger: {
-        trigger: ".movie-section",
-        start: "top 70%",
-        toggleActions: "play reverse play reverse"
-    }
-});
+            scrollTrigger: {
+                trigger: ".movie-section",
+                start: "top 100%",
+                toggleActions: "play reverse play reverse"
+            }
+        });
 
 
 
@@ -298,7 +298,7 @@
         gsap.from(".Reason-box", {
             y: 80,
             opacity: 0,
-            stagger: 0.2,
+            stagger: 0.3,
 
             scrollTrigger: {
                 trigger: ".reason-section",
@@ -311,7 +311,7 @@
         gsap.from(".ask-box", {
             x: -120,
             opacity: 0,
-            stagger: 0.15,
+            stagger: 0.2,
 
             scrollTrigger: {
                 trigger: ".Ask-Section",
@@ -319,6 +319,19 @@
                 toggleActions: "restart none restart none"
             }
         });
+
+        //Second-last-section
+        gsap.from(".second-last-section",{
+            y:80,
+            opacity:0,
+            duration:1,
+
+            scrollTrigger:{
+               trigger: ".second-last-section",
+                start: "top 70%",
+                toggleActions: "restart none restart none"
+            }
+        })
 
         // Last Section
         gsap.from(".last-section", {
@@ -329,7 +342,7 @@
                 trigger: ".last-section",
                 start: "top 80%",
                 toggleActions: "restart none restart none"
-            
+
             }
         });
 
